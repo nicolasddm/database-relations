@@ -58,8 +58,6 @@ class ProductsRepository implements IProductsRepository {
       },
     });
 
-    console.log(productIds, existentProducts);
-
     for (let i = 0; i < existentProducts.length; i += 1) {
       existentProducts[i].quantity = productQuantitys[i];
     }
